@@ -1,8 +1,8 @@
 <form action="#" method="post">
     <fieldset>
         <legend>Kiểm tra số nguyên tố.</legend>
-    Nhập số N: <input type="text" name="soN"></br>
-    <input type="submit" name="kiemtra" value="Kiểm tra">
+        Nhập số N: <input type="text" name="soN"></br>
+        <input type="submit" name="kiemtra" value="Kiểm tra">
     </fieldset>
 </form>
 
@@ -21,8 +21,8 @@
     };
     $n = $_POST["soN"];
     if(check_prime($n)){
-        echo "{$n} là số nguyên tố.";
+        echo $n." là số nguyên tố.";
     }else {
-        echo "{$n} không phải là số nguyên tố.";
+        echo $n." không phải là số nguyên tố.";
     };
 ?>
