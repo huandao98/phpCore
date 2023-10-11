@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user'])) {
-    header("location:login.html");
+    header("location:exam3_login.html");
 } else {
     echo "Đăng nhập thành công.</br>";
 }
@@ -15,6 +15,6 @@ if (!isset($_SESSION['user'])) {
 </head>
 <body>
     <?php echo $_SESSION['user']; ?>
-    <a href="logout.php">Logout</a>
+    <a href="exam3_logout.php">Logout</a>
 </body>
 </html>

@@ -4,10 +4,10 @@ $username = $_POST['username'] ?? '';
 $password = $_POST['password'] ?? '';
     if ($username == 'admin' && $password == '123') {
         $_SESSION['user'] = $username;
-        header("location:user.php");
+        header("location:exam3_user.php");
     } else {
         echo "incorrect username and password";
-        require "login.html";
+        require "exam3_login.html";
     }
 
 ?>
